@@ -378,11 +378,11 @@ class MVCMGapFiller:
 def main():
     filler = MVCMGapFiller()
     
-    # Вариант 1: Генерация тестовых данных
+    # Variant 1: Text data gen 
     filler.generate_test_data(n_points=100, n_vars=4)
     filler.create_missing_patterns()
     
-    # Вариант 2: Загрузка из файла
+    # Variant 2: File load
     # filler.load_from_csv('your_data.csv').create_missing_patterns()
     
     results = filler.fill_all_gaps(
